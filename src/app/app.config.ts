@@ -1,12 +1,24 @@
-import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import { provideRouter, Routes } from '@angular/router';
+import { provideHttpClient } from '@angular/common/http';
+import { AuthComponent } from './auth/auth';
+import { DashboardComponent } from './dashboard/dashboard';
+import { BillsComponent } from './bills/bills';
+import { UsageComponent } from './usage/usage';
+import { ProfileComponent } from './profile/profile';
 
-import { routes } from './app.routes';
-import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
+const routes: Routes = [
+  { path: '', redirectTo: 'login', pathMatch: 'full' },  // default
+  { path: 'login', component: AuthComponent },
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'bills', component: BillsComponent },
+  { path: 'usage', component: UsageComponent },
+  { path: 'profile', component: ProfileComponent },
+  { path: '**', redirectTo: 'login' }
+];
 
-export const appConfig: ApplicationConfig = {
+export const appConfig = {
   providers: [
-    provideBrowserGlobalErrorListeners(),
-    provideRouter(routes), provideClientHydration(withEventReplay())
+    provideRouter(routes),
+    provideHttpClient()  
   ]
 };

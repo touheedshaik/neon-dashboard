@@ -1,0 +1,161 @@
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="dashboard">
+
+    <!-- HEADER -->
+    <div class="page-header">
+      <h1 class="dashboard-title">DASHBOARD</h1>
+      <p class="subtitle">
+        <i class="fas fa-chart-line status-icon"></i>
+        All systems online
+      </p>
+    </div>
+
+  <!-- CURRENT BILL -->
+<div class="card card-gradient cyber-border scan-line">
+
+  <div class="card-header">
+    <i class="fas fa-dollar-sign"></i>
+    <span>CURRENT BILL</span>
+  </div>
+
+  <div class="card-body">
+    <div class="amount">$129.99</div>
+    <p class="due">• Due in 68 days</p>
+    <button class="pay-btn">
+      <i class="fas fa-bolt"></i> PAY NOW
+    </button>
+  </div>
+
+</div>
+
+  <!-- BILLING PERIOD -->
+<div class="card card-gradient cyber-border ">
+
+  <div class="card-header">
+    <i class="fas fa-calendar-alt"></i>
+    <span>BILLING PERIOD</span>
+  </div>
+
+  <div class="card-body billing-body">
+    <div class="billing-date">
+      2026-02-01 <span class="to-text">to</span> 2026-03-28
+    </div>
+  </div>
+
+</div>
+
+  <!-- DATA USAGE -->
+<div class="card card-cyan cyber-border pulse-glow">
+
+  <div class="card-header usage-header">
+    <div class="left">
+      <i class="fas fa-wifi"></i>
+      <span> DATA USAGE</span>
+    </div>
+
+    <span class="badge">LAST 30 DAYS</span>
+  </div>
+
+  <div class="usage-stats">
+    <div class="stat total">
+      <p>TOTAL</p>
+      <h2>383</h2>
+      <span>GB</span>
+    </div>
+
+    <div class="stat avg">
+      <p>AVG/DAY</p>
+      <h2>12.8</h2>
+      <span>GB</span>
+    </div>
+
+    <div class="stat peak">
+      <p>PEAK</p>
+      <h2>20.9</h2>
+      <span>GB</span>
+    </div>
+  </div>
+
+  <div class="progress-bar">
+    <div class="progress"></div>
+  </div>
+
+  <p class="unlimited">
+    <i class="fas fa-arrow-trend-up"></i> UNLIMITED DATA
+  </p>
+
+</div>
+
+  <!-- ACTIVE ADD-ONS -->
+<div id="addons-container" class="card card-gradient cyber-border">
+
+  <div class="card-header">
+    <i class="fas fa-bolt"></i>
+    <span>ACTIVE ADD-ONS</span>
+  </div>
+
+  <div class="card-body">
+
+    <div class="addon-item">
+      <div class="addon-info">
+        <h4>Static IP Address</h4>
+        <p>Fixed IP for remote access</p>
+      </div>
+      <span class="addon-price">$15.00/mo</span>
+    </div>
+
+    <div class="addon-item">
+      <div class="addon-info">
+        <h4>Premium Support</h4>
+        <p>24/7 priority support</p>
+      </div>
+      <span class="addon-price">$25.00/mo</span>
+    </div>
+
+  </div>
+
+</div>
+
+<nav class="bottom-nav">
+
+  <button class="nav-item"
+          routerLink="/home"
+          routerLinkActive="active">
+    <i class="fas fa-home"></i>
+    <span>HOME</span>
+  </button>
+
+  <button class="nav-item"
+          routerLink="/bills"
+          routerLinkActive="active">
+    <i class="fas fa-receipt"></i>
+    <span>BILLS</span>
+  </button>
+
+  <button class="nav-item"
+          routerLink="/usage"
+          routerLinkActive="active">
+    <i class="fas fa-chart-line"></i>
+    <span>USAGE</span>
+  </button>
+
+  <button class="nav-item"
+          routerLink="/profile"
+          routerLinkActive="active">
+    <i class="fas fa-user"></i>
+    <span>PROFILE</span>
+  </button>
+
+</nav>

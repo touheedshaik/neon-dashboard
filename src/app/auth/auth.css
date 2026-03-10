@@ -1,0 +1,170 @@
+/* PAGE BACKGROUND */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+
+  background: radial-gradient(circle at top, #0a0f2c, #030617 70%);
+}
+
+/* CARD */
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+
+  border-radius: 25px;
+  overflow: hidden;
+
+  background: linear-gradient(145deg, #2a2f6f, #0a0f2c);
+  border: 1px solid rgba(0,245,255,0.4);
+  box-shadow: 0 0 40px rgba(0,245,255,0.25);
+}
+
+/* HEADER */
+.auth-header {
+  text-align: center;
+  padding: 40px 30px;
+  border-bottom: 1px solid rgba(0,245,255,0.3);
+}
+
+.logo-icon {
+  font-size: 42px;
+  color: #00f5ff;
+  text-shadow: 0 0 20px #00f5ff;
+}
+
+.logo-text {
+  font-size: 34px;
+  margin: 10px 0 5px;
+  color: #00f5ff;
+  text-shadow: 0 0 25px #00f5ff;
+}
+
+.portal-text {
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #7bdfff;
+}
+
+/* SECURE BADGE */
+.secure-badge {
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 6px 18px;
+  border-radius: 20px;
+
+  border: 1px solid #a855f7;
+  background: rgba(168,85,247,0.15);
+  color: #a855f7;
+  font-size: 12px;
+}
+
+/* BODY */
+.auth-body {
+  padding: 35px 30px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-body label {
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+  color: #00f5ff;
+}
+
+.auth-body input {
+  height: 48px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,245,255,0.4);
+  background: #0a1028;
+  padding: 0 15px;
+  color: white;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.auth-body input:focus {
+  box-shadow: 0 0 10px #00f5ff;
+}
+
+/* BUTTON */
+.btn-login {
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+
+  background: linear-gradient(90deg, #00f5ff, #8e2de2);
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  transition: 0.3s ease;
+}
+
+.btn-login:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px #00f5ff;
+}
+
+/* DEMO TEXT */
+.demo-credentials {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.demo-credentials p {
+  font-size: 12px;
+  color: #7bdfff;
+  margin-bottom: 5px;
+}
+
+.demo-credentials span {
+  font-size: 14px;
+  color: #00f5ff;
+}
+.signin-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px 0;
+
+  border: none;
+  border-radius: 30px;
+
+  background: linear-gradient(90deg, #22d3ee, #8b5cf6);
+  color: white;
+
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.4);
+}
+
+.signin-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(139, 92, 246, 0.6);
+}
+
+.signin-btn i {
+  font-size: 16px;
+}

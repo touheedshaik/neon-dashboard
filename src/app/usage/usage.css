@@ -1,0 +1,131 @@
+/* PAGE WRAPPER */
+.usage-page {
+  max-width: 500px;       /* same as bills */
+  margin: auto;
+  padding: 30px 20px 120px;
+  text-align: center;
+}
+
+/* ================= HEADER ================= */
+
+.page-header {
+  margin-bottom: 30px;
+}
+
+.glow-text {
+  font-size: 38px;        /* reduced */
+  color: #00f5ff;
+  text-shadow:
+    0 0 10px #00f5ff,
+    0 0 25px #00f5ff;
+}
+
+.subtitle {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #9aa0a6;
+}
+
+.header-icon {
+  color: #00f5ff;
+  margin-right: 6px;
+}
+
+/* ================= STATS CARDS ================= */
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+/* CARD */
+.stat-card {
+  flex: 1;
+  padding: 18px 10px;     /* reduced padding */
+  border-radius: 18px;
+
+  background: linear-gradient(145deg, #0d1125, #090d1d);
+  border: 1px solid rgba(0,245,255,0.3);
+
+  box-shadow: 0 0 18px rgba(0,245,255,0.15);
+  transition: 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 28px rgba(0,245,255,0.35);
+}
+
+/* ICON */
+.icon {
+  font-size: 18px;       /* reduced */
+  margin-bottom: 6px;
+}
+
+.total-icon { color: #00f5ff; }
+.down-icon  { color: #a855f7; }
+.up-icon    { color: #ff4da6; }
+
+/* LABEL */
+.stat-label {
+  font-size: 10px;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+/* VALUE */
+.stat-card h2 {
+  font-size: 22px;       /* reduced */
+  margin: 4px 0;
+  color: white;
+}
+
+.stat-card span {
+  font-size: 10px;
+  color: #00f5ff;
+}
+
+/* ================= SUMMARY CARD ================= */
+
+.stats-summary-card {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 20px;
+
+  background: linear-gradient(145deg, #0d1125, #090d1d);
+  border: 1px solid rgba(0,245,255,0.3);
+
+  box-shadow: 0 0 20px rgba(0,245,255,0.15);
+}
+
+/* ROW */
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+/* DIVIDER */
+.divider {
+  height: 1px;
+  background: rgba(0,245,255,0.2);
+}
+
+/* LABEL */
+.stat-label {
+  font-size: 12px;
+  color: #8aa0c0;
+}
+
+/* VALUE */
+.stat-value {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* COLORS */
+.cyan { color: #00f5ff; }
+.purple { color: #a855f7; }
+.pink { color: #ff4da6; }

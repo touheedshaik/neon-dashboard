@@ -1,0 +1,58 @@
+<div class="auth-page">
+
+  <div class="auth-card">
+
+    <!-- HEADER -->
+    <div class="auth-header">
+      <i class="fas fa-bolt logo-icon"></i>
+      <h1 class="logo-text">360NET</h1>
+      <p class="portal-text">CUSTOMER PORTAL</p>
+    </div>
+
+    <div class="auth-body">
+
+      <!-- STEP 1 LOGIN -->
+
+      <div *ngIf="step === 1">
+
+        <label>EMAIL ADDRESS</label>
+        <input type="email" [(ngModel)]="email">
+
+        <button class="signin-btn" (click)="login()">
+          SIGN IN
+        </button>
+
+      </div>
+
+
+      <!-- STEP 2 OTP -->
+
+      <div *ngIf="step === 2">
+
+        <label>ENTER OTP</label>
+
+        <input
+          type="text"
+          [(ngModel)]="otp"
+          placeholder="Enter OTP">
+
+        <button class="signin-btn" (click)="verifyOtp()">
+          VERIFY OTP
+        </button>
+
+      </div>
+
+
+      <div class="forgot-link">
+        <a routerLink="/forgot-password">Forgot Password?</a>
+      </div>
+
+      <p class="error" *ngIf="errorMessage">
+        {{ errorMessage }}
+      </p>
+
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,94 @@
+<div class="bills-page">
+
+  <!-- HEADER -->
+  <div class="page-header">
+    <h1 class="glow-text">BILLS & HISTORY</h1>
+    <p class="subtitle">View and download your invoices</p>
+  </div>
+
+  <!-- BILL CARD 1 -->
+  <div class="bill-card">
+
+    <div class="bill-top">
+      <div>
+        <p class="label">Period</p>
+        <h3>Feb 2026</h3>
+      </div>
+      <span class="bill-status pending">PENDING</span>
+    </div>
+
+    <div class="bill-details">
+      <div class="left">
+        <p>Base Amount</p>
+        <p>Add-ons</p>
+      </div>
+      <div class="right">
+        <p>$89.99</p>
+        <p>$40.00</p>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="bill-total">
+      <span>Total</span>
+      <span class="total-amount">$129.99</span>
+    </div>
+
+    <div class="download-row">
+      <button class="btn-download"
+              (click)="downloadBill('bill_001')">
+        <i class="fas fa-download download-icon"></i>
+        <span>Download</span>
+      </button>
+
+      <button class="arrow-btn">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- BILL CARD 2 -->
+  <div class="bill-card">
+
+    <div class="bill-top">
+      <div>
+        <p class="label">Period</p>
+        <h3>Jan 2026</h3>
+      </div>
+      <span class="status paid">PAID</span>
+    </div>
+
+    <div class="bill-details">
+      <div class="left">
+        <p>Base Amount</p>
+        <p>Add-ons</p>
+      </div>
+      <div class="right">
+        <p>$89.99</p>
+        <p>$40.00</p>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="bill-total">
+      <span>Total</span>
+      <span class="total-amount">$129.99</span>
+    </div>
+
+    <div class="download-row">
+      <button class="btn-download">
+        <i class="fas fa-download"></i>
+        Download
+      </button>
+
+      <button class="arrow-btn">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+
+  </div>
+
+</div>
