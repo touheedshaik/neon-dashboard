@@ -19,7 +19,12 @@ export class AuthService {
     });
 
   }
-
+  sendLoginOtp(email:string){
+  return this.http.post(
+    'https://360net.ac.nz/api/send-login-otp.php',
+    { email }
+  );
+}
   verifyLoginOtp(email:string,otp:string){
 
     return this.http.post<any>(this.verifyOtpApi,{

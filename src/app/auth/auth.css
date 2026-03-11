@@ -168,3 +168,95 @@
 .signin-btn i {
   font-size: 16px;
 }
+.forgot-link {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.forgot-link a {
+  color: #9b59ff;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.forgot-link a:hover {
+  color: #00e0ff;
+  text-decoration: underline;
+}
+.error{
+  color:#ff6b6b;
+  font-size:13px;
+  margin-top:5px;
+}
+/* INPUT GROUP */
+.input-group{
+  display:flex;
+  flex-direction:column;
+  margin-bottom:20px;
+}
+
+/* LABEL */
+.input-label{
+  color:#18e7ff;
+  font-size:14px;
+  letter-spacing:2px;
+  margin-bottom:10px;
+  font-weight:500;
+}
+
+/* INPUT FIELD */
+.input-group input{
+  width:100%;
+  padding:16px 18px;
+  border-radius:14px;
+  border:1px solid rgba(24,231,255,0.5);
+  background:rgba(5,15,40,0.8);
+  color:white;
+  font-size:16px;
+  outline:none;
+  transition:all 0.3s ease;
+}
+
+/* PLACEHOLDER */
+.input-group input::placeholder{
+  color:#a8c7ff;
+}
+
+/* FOCUS GLOW */
+.input-group input:focus{
+  border:1px solid #18e7ff;
+  box-shadow:
+    0 0 10px rgba(24,231,255,0.6),
+    0 0 20px rgba(24,231,255,0.4);
+}
+
+/* ERROR MESSAGE */
+.error{
+  color:#ff6b6b;
+  font-size:13px;
+  margin-top:6px;
+}
+
+/* SIGN IN BUTTON */
+.signin-btn{
+  width:100%;
+  padding:16px;
+  border:none;
+  border-radius:40px;
+  font-size:16px;
+  font-weight:600;
+  color:white;
+  cursor:pointer;
+
+  background:linear-gradient(90deg,#2ec7d6,#8b5cf6);
+
+  transition:all 0.3s ease;
+}
+
+/* BUTTON HOVER */
+.signin-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}

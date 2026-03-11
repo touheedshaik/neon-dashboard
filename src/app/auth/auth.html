@@ -13,34 +13,54 @@
 
       <!-- STEP 1 LOGIN -->
 
-      <div *ngIf="step === 1">
+      <form #loginForm="ngForm" *ngIf="step === 1">
 
-        <label>EMAIL ADDRESS</label>
-        <input type="email" [(ngModel)]="email">
+  <div class="input-group">
 
-        <button class="signin-btn" (click)="login()">
-          SIGN IN
-        </button>
+    <label class="input-label">EMAIL ADDRESS</label>
 
-      </div>
+    <input
+      type="email"
+      name="email"
+      [(ngModel)]="email"
+      required
+      email
+      placeholder="Enter email"
+      #emailField="ngModel"
+    />
+
+  </div>
+
+  <div class="error" *ngIf="emailField.invalid && emailField.touched">
+    Enter a valid email address
+  </div>
+
+  <button 
+    class="signin-btn"
+    (click)="login()"
+    [disabled]="loginForm.invalid">
+    SIGN IN
+  </button>
+
+</form>
 
 
       <!-- STEP 2 OTP -->
 
       <div *ngIf="step === 2">
 
-        <label>ENTER OTP</label>
+  <label>ENTER OTP</label>
 
-        <input
-          type="text"
-          [(ngModel)]="otp"
-          placeholder="Enter OTP">
+  <input
+    type="text"
+    [(ngModel)]="otp"
+    placeholder="Enter OTP">
 
-        <button class="signin-btn" (click)="verifyOtp()">
-          VERIFY OTP
-        </button>
+  <button class="signin-btn" (click)="verifyOtp()">
+    VERIFY OTP
+  </button>
 
-      </div>
+</div>
 
 
       <div class="forgot-link">
